@@ -39,3 +39,25 @@ while True:
         print("User account created!")
         break
 ```
+
+### Loop nr3
+Please write a program which keeps asking the user for a PIN code until they type in the correct one, which is 4321. The program should then print out the number of times the user tried different codes.
+
+Answer:
+```python
+attempt = 0
+
+while True:
+    number = int(input("PIN: "))
+    if number != 4321:
+        attempt +=1
+        print("Wrong")
+    elif number == 4321:
+        attempt +=1
+        break
+
+if attempt == 1:
+    print("Correct! It only took you one single attempt!")
+else:
+    print(f'Correct! It took you {attempt} attempts')
+```
