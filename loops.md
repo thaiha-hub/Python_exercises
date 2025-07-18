@@ -72,7 +72,7 @@ while True:
     if something_is_true:
         break  # 🛑 Exit the loop
 ```
-Example: print out the next leap year when inputting a random year
+### Example: print out the next leap year when inputting a random year
 
 ```python
 year = int(input("Year:"))
@@ -88,5 +88,25 @@ while True:
 
 print(f'The next leap year after {year} is {l_year}')
 ```
+### Make a story: 
+The loop will end when type in "end" or the same word twice. 
 
+```python
+prev_word=""
+word = ""
+text=" "
+
+while True:
+    word = input("Please type in a word: ")
+    if word == "end":
+        break
+    
+    elif word == prev_word:
+        break
+        
+    text += word + " "
+    prev_word = word
+    
+print (text)
+```
 
