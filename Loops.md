@@ -1,4 +1,4 @@
-# LOOPS
+# PYTHON LOOPS
 
 ## Simple loops
 
@@ -108,5 +108,37 @@ while True:
     prev_word = word
     
 print (text)
+```
+### Working with numbers
+
+```python
+number=int()
+count= 0
+total =int()
+neg_count=0
+pos_count=0
+
+print("Please type in integer numbers. Type in 0 to finish.")
+
+while True:
+    number = int(input("Number: "))
+    count +=1
+    total +=number
+
+    if number>0:
+        pos_count +=1
+    if number < 0:
+        neg_count +=1
+
+    if number == 0:
+        break
+    if (count) !=0:
+        meen = total/ (count)
+
+print(f'Numbers typed in {count-1}')
+print("The sum of the numbers is", total)
+print("The mean of the numbers is", meen)
+print("Positive numbers", pos_count)
+print("Negative numbers", neg_count)
 ```
 
