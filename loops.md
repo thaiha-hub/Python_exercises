@@ -61,3 +61,32 @@ if attempt == 1:
 else:
     print(f'Correct! It took you {attempt} attempts')
 ```
+
+## while True:
+**"Keep doing this forever until I tell you to stop!"**
+while True is an indefinite loop that one needs to break in order to stop it.
+
+```python
+while True:
+    do_something()
+    if something_is_true:
+        break  # 🛑 Exit the loop
+```
+Example: print out the next leap year when inputting a random year
+
+```python
+year = int(input("Year:"))
+l_year = year+1
+
+while True:
+    if l_year%4 == 0 and l_year % 100 !=0:
+        break
+    elif l_year%4 ==0 and l_year%100 ==0 and l_year%400==0:
+        break
+    
+    l_year +=1
+
+print(f'The next leap year after {year} is {l_year}')
+```
+
+
