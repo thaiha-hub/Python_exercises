@@ -25,3 +25,18 @@ list.reverse()
 len(list)
 ## Loops in The list
 for list_item in list      
+
+# NUMERICAL LISTS
+## Using the range function  
+**For loops**
+```python
+for value in range(1,6):
+print(value)
+```
+**Make a list**
+```python
+numbers = list(range(1,5))
+print(numbers)
+# Result: [1, 2, 3, 4]
+numbers = list(range(2, 11, 2)
+# Result: [2, 4, 6, 8, 10]
